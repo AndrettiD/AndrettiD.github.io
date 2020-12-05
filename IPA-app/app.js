@@ -1,21 +1,27 @@
-//BrewrieDB
-//"https:sandbox-api.brewerydb.com/v2{endpoint}/GETkey=87b934b40ebd6d2f774995a2551013d1"
-
 $(() => {
+  //        $("form").on("submit",(event) => {
+  //          const userInput =
+  //
+  // $(document).ready(function() {
 
-  $(document).ready(function() {
+
       $.ajax({
-          url:'https://cors-anywhere.herokuapp.com/http://api.brewerydb.com/v2/beers/?key=87b934b40ebd6d2f774995a2551013d1',
-
+          url:'https://cors-anywhere.herokuapp.com/http://api.brewerydb.com/v2/beer/random/?key=87b934b40ebd6d2f774995a2551013d1',
+          type: "GET",
+          dataType: "json"
       }).then(
-         (data)=>{
-           
+         (data) =>{
 
            console.log(data);
-    },
-    ()=>{
-        console.log("bad request");
-    }
-      );
-  })
+          },
+          (error)=>{
+            console.log("bad request");
+          })
+
+
+
+
+    // })
+    // })
+
 })
