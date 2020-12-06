@@ -2,11 +2,24 @@
 $(() => {
 
 
-        $.ajax({
+  $.ajax({
 
-          url: "https://cors-anywhere.herokuapp.com/http://api.brewerydb.com/v2/locations/?key=87b934b40ebd6d2f774995a2551013d1",
-          type: "GET",
-          dataType: "json",
+    url: "https://cors-anywhere.herokuapp.com/http://api.brewerydb.com/v2/breweries/?key=87b934b40ebd6d2f774995a2551013d1",
+    type: "GET",
+    dataType: "json",
+
+      }).then((breweries) => {
+          const sliceArr = breweries.slice(0, 18);
+           console.log("sliceArr");
+          for (let breweries of sliceArr);
+          const $breweries = $(".breweries");
+
+           //modal
+          const $div =$("<div>").addClass("profile").attr("ID", "openModal").appendTo($breweries).on("click", event => {
+            $(event.currentTarget)$($modal).show()
+          })
+
+          const $modal = $("<div>").attr
 
 
 
@@ -16,21 +29,30 @@ $(() => {
 
 
 
-        }).then(
 
-           (data) =>{
-             console.log(data);
+        })
 
-            },
-            (error)=>{
-              console.log("bad request");
-            });
+
+
+
+
+
+
+
+      // }).then(
+      //
+      //      (data) =>{
+      //        console.log(data);
+      //
+      //       },
+      //       (error)=>{
+      //         console.log("bad request");
+      //       });
 
 
 
 
       });
-});
 
 
 
