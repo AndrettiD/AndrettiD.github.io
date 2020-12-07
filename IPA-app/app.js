@@ -8,20 +8,28 @@ $(() => {
     type: "GET",
     dataType: "json",
 
+      }).then((data) =>{
+             console.log(data);
+            },(error)=>{
+              console.log("bad request");
+
+            // callback from api
       }).then((breweries) => {
-          const sliceArr = breweries.slice(0, 18);
+          const sliceArr  = $(breweries).slice(0, 18);
            console.log("sliceArr");
           for (let breweries of sliceArr){
           const $breweries = $(".breweries");
 
+
            //modal
-          const $div =$("<div>").addClass("profile").attr("ID", "openModal").appendTo($breweries).on("click", event => {
+          const $div = $("<div>").addClass("profile").attr("id", "openModal").appendTo($breweries).on("click", event => {
             $(event.currentTarget)($modal).show()
+
           })
 
-          const $modal = $("<div>").attr("ID", breweries.id).addClass("modal").css("display", "none").appendTo("body");
+          const $modal = $("<div>").attr("id", breweries.id).addClass("modal").css("display", "none").appendTo("body");
 
-          const $textbox = $("<div>").attr("ID", "modal-textbox").appendTo($modal);
+          const $textbox = $("<div>").attr("id", "modal-textbox").appendTo($modal);
 
           const $close = $("<p>").addClass("modalClose").text("X").appendTo($textbox).on("click", event =>{
             $($modal).css("display", "none")
@@ -52,17 +60,9 @@ $(() => {
           //front Pictures
           const $h3 = $("<h4>").text(breweries.name).appendTo($div);
 
-          const $img = $("<img>").addClass("photo").attr("src", breweries.img_uri).appendTo($div);
+          const $img = $("<img>").addClass("photo").attr("src", breweries/img).appendTo($div);
    }
   })
 
-      // }).then(
-      //
-      //      (data) =>{
-      //        console.log(data);
-      //
-      //       },
-      //       (error)=>{
-      //         console.log("bad request");
-      //       });
+
 });
