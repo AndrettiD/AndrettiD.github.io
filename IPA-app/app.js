@@ -14,11 +14,22 @@ $(() => {
               console.log("bad request");
 
             // callback from api
-      }).then((breweries) => {
-          const sliceArr  = $(breweries).slice(0, 18);
-           console.log("sliceArr");
-          for (let breweries of sliceArr){
-          const $breweries = $(".breweries");
+            //new try
+            // $("url").click(function(event){
+            //   event.preventDefault();
+            //   breweries.blur();
+            //   $.get(breweries.herf, function(html){
+            //     $(html).appendTo("body").modal();
+            //   })
+            // })
+
+            // call from api
+            //old one
+      // }).then((breweries) => {
+      //     const sliceArr  = $(breweries).slice(0, 18);
+      //      console.log("sliceArr");
+      //     for (let breweries of sliceArr){
+      //     const $breweries = $(".breweries");
 
 
            //modal
@@ -61,7 +72,7 @@ $(() => {
           const $h3 = $("<h4>").text(breweries.name).appendTo($div);
 
           const $img = $("<img>").addClass("photo").attr("src", breweries/img).appendTo($div);
-   }
+   //}
   })
 
 
