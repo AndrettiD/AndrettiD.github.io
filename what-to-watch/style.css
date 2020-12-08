@@ -1,3 +1,4 @@
+/* @media screen and (max-width: 800px){}*/
 
 body {
   font-family: 'Kulim Park', sans-serif;
@@ -10,27 +11,58 @@ flex-wrap: wrap;
 }
 .inputForm {
   margin-left: 35px;
+  margin-right: 15px;
   flex-direction: column;
   background: #E0DDFE;
   width: 30%;
+  margin-bottom: 20px;
 
 }
 .inputForm > h2{
-color: #E16325;
+color: #8089FA;
+
 font-weight: bold;
 margin-left: 40px;
 
 }
 
 input{
-  color: #FC671C;
+  color: #8089FA;
   margin-left: 40px;
   height: 20px;
-
 }
 #userInput{
-width: 160px;
+width: 50%;
+color: #8089FA;
 }
+
+#search {
+  width: 70px;
+  height: 30px;
+}
+
+.info {
+  background: #A393FC;
+  width: 50%;
+  margin-left: 170px;
+}
+
+.info > h1{
+  color: white;
+  margin-left: 2%;
+  padding: 5%;
+  font-weight: bolder;
+}
+
+.info > dl > dt{
+color: white;
+font-weight: bold;
+font-size: 22px;
+margin-left: 5%;
+padding: 3%;
+}
+
+
 
 
 
@@ -42,19 +74,17 @@ width: 160px;
 	height: 100%;
 	width: 100%;
 	z-index: 1;
-	/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
 	overflow: auto;
-	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
   display: none;
 }
 
 #modal-textbox {
-	background-color: white;
+	background-color: #BEE7FA;
 	height: 350px;
 	width: 550px;
 	border-radius: 2px;
   margin: 150px auto;
-	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
   padding: 2%;
   line-height: 120%;
 }
@@ -66,19 +96,19 @@ width: 160px;
 
 #modal-footer{
   padding: 2%;
-  line-height: 120%;
+  line-height: 100%;
   text-align: right;
+  text-decoration: none;
 }
-
 
 
 .modal-buttons{
   width: 70px;
-  padding: 10px 8px;
-	background-color: orange;
-	border-radius: 1.5px;
-	color: white;
-  font-size: 20px;
+  padding: 8px;
+	background-color: #E0DDFE;
+  border-color: #8089FA;
+	color: #8089FA;
+  font-size: 15px;
 	cursor: pointer;
   display: inline;
   margin: 5px;

@@ -29,6 +29,9 @@ $(() => {
         let year = data.Year;
            $("#year").html(year);
 
+        let awards = data.Awards;
+           $("#awards").html(awards);
+
         let rated = data.Rated
            $("#rated").html(rated);
 
