@@ -1,4 +1,38 @@
 
+body {
+  font-family: 'Kulim Park', sans-serif;
+  background: #BEE7FA;
+}
+.container{
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+}
+.inputForm {
+  margin-left: 35px;
+  flex-direction: column;
+  background: #E0DDFE;
+  width: 30%;
+
+}
+.inputForm > h2{
+color: #E16325;
+font-weight: bold;
+margin-left: 40px;
+
+}
+
+input{
+  color: #FC671C;
+  margin-left: 40px;
+  height: 20px;
+
+}
+#userInput{
+width: 160px;
+}
+
+
 
 #modal{
   background-color: rgba(0,0,0,0.4);
@@ -23,7 +57,11 @@
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   padding: 2%;
   line-height: 120%;
+}
 
+#modal-textbox > h1{
+ padding-bottom: 15px;
+ color: grey;
 }
 
 #modal-footer{
@@ -32,17 +70,18 @@
   text-align: right;
 }
 
-h1 {
-  padding-bottom: 15px;
-}
+
 
 .modal-buttons{
-  padding: 14px 18px;
-	background-color: #677996;
-	border: none;
-	outline: none;
-	border-radius: 3px;
+  width: 70px;
+  padding: 10px 8px;
+	background-color: orange;
+	border-radius: 1.5px;
 	color: white;
-	font-family: 'Arial';
+  font-size: 20px;
 	cursor: pointer;
+  display: inline;
+  margin: 5px;
+  padding: 5px;
+
 }
