@@ -12,6 +12,7 @@ flex-wrap: wrap;
 .inputForm {
   margin-left: 35px;
   margin-right: 15px;
+  margin-bottom: 15px;
   flex-direction: column;
   background: #E0DDFE;
   width: 30%;
@@ -27,7 +28,8 @@ margin-left: 40px;
 
 input{
   color: #8089FA;
-  margin-left: 40px;
+  margin-left: 30px;
+  margin-bottom: 15px;
   height: 20px;
 }
 #userInput{

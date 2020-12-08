@@ -71,7 +71,7 @@ $openBtn.on("click", openModal);
 $closeBtn.on('click', closeModal);
 
 // time modal open auto
-setTimeout(openModal, 500);
+setTimeout(openModal, 200);
 
 
 
