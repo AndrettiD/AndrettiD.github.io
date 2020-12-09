@@ -68,7 +68,7 @@ const closeModal = () => {
 }
 //Event Listeners
 $openBtn.on("click", openModal);
-$closeBtn.on('click', closeModal);
+$closeBtn.on("click", closeModal);
 
 // time modal open auto
 setTimeout(openModal, 200);

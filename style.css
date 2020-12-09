@@ -10,7 +10,7 @@ flex-direction: column;
 flex-wrap: wrap;
 }
 .inputForm {
-  margin-left: 35px;
+  margin-left: 170px;
   margin-right: 15px;
   margin-bottom: 15px;
   flex-direction: column;
@@ -22,7 +22,7 @@ flex-wrap: wrap;
 .inputForm > h2{
 color: #8089FA;
 font-weight: bold;
-margin-left: 40px;
+margin-left: 20px;
 
 }
 
@@ -44,14 +44,14 @@ color: #8089FA;
 
 .info {
   background: #A393FC;
-  width: 50%;
+  width: 55%;
   margin-left: 170px;
 }
 
 .info > h1{
   color: white;
   margin-left: 2%;
-  padding: 5%;
+  padding: 1%;
   font-weight: bolder;
 }
 
@@ -60,18 +60,18 @@ color: white;
 font-weight: bold;
 font-size: 22px;
 margin-left: 5%;
-padding: 3%;
+padding: 1%;
 }
 
 
 
 #modal{
-  background-color: rgba(0,0,0,0.4);
-	position: fixed;
 	top: 0;
 	left: 0;
 	height: 100%;
 	width: 100%;
+  background-color: rgba(0,0.4,0,0.6);
+	position: fixed;
 	z-index: 1;
 	overflow: auto;
   display: none;
@@ -98,9 +98,8 @@ padding: 3%;
 }
 
 #modal-footer{
-  padding: 2%;
-  line-height: 100%;
-  text-align: right;
+    text-align: right;
+    margin-top: 55px;
 }
 
 #close{
@@ -115,8 +114,69 @@ padding: 3%;
   font-size: 15px;
 	cursor: pointer;
   display: inline;
-  margin: 8px 0 0 170px;
+  margin: 8px 0 10px 170px;
   padding: 5px;
+}
 
+#title{
+  color:#BEE7FA;
+  font-size: 21px;
+  font-style: oblique;
+  margin-left: 75px;
+}
 
+#director {
+  color:#BEE7FA;
+  font-size: 21px;
+  font-style: oblique;
+  margin-left: 75px;
+}
+
+#actors {
+  color:#BEE7FA;
+  font-size: 21px;
+  font-style: oblique;
+  margin-left: 75px;
+}
+
+#genre {
+  color:#BEE7FA;
+  font-size: 21px;
+  font-style: oblique;
+  margin-left: 75px;
+}
+
+#year {
+  color:#BEE7FA;
+  font-size: 21px;
+  font-style: oblique;
+  margin-left: 75px;
+}
+
+#awards {
+  color:#BEE7FA;
+  font-size: 21px;
+  font-style: oblique;
+  margin-left: 75px;
+}
+
+#rated {
+  color:#BEE7FA;
+  font-size: 21px;
+  font-style: oblique;
+  margin-left: 75px;
+}
+
+#type {
+  color:#BEE7FA;
+  font-size: 21px;
+  font-style: oblique;
+  margin-left: 75px;
+}
+
+#runtime {
+  color:#BEE7FA;
+  font-size: 21px;
+  font-style: oblique;
+  margin-left: 75px;
 }
